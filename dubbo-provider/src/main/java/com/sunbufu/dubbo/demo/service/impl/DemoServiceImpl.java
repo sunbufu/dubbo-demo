@@ -9,6 +9,7 @@ public class DemoServiceImpl implements DemoService {
 
     @Override
     public String sayHi(String name) {
+        System.out.println("receive a request for sayHi with param name=[" + name + "]");
         return "Hi " + name + ", this is dubbo-provider.";
     }
 }
